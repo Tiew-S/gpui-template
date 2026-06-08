@@ -1,7 +1,16 @@
 [package]
-name = "gpui-template"
+name = "{{project-name}}"
+description = "A GPUI application"
+authors = ["{{authors}}"]
+repository = "https://github.com/Tiew-S/{{project-name}}"
 version = "0.1.0"
 edition = "2024"
+
+[package.metadata.wix]
+upgrade-guid = "21C8673E-503C-4C52-B6B0-1AF2C8B8BC26"
+path-guid = "FCCD5BD5-1DE8-4E7F-9926-7FADF5BA6CE0"
+license = false
+eula = false
 
 [dependencies]
 gpui = { git = "https://github.com/zed-industries/zed" }
