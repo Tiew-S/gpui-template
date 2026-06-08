@@ -12,6 +12,7 @@ impl Render for App {
             .v_flex()
             .child(
                 TitleBar::new()
+                    .child("{{project-name}}")
             )
     }
 }
@@ -27,7 +28,7 @@ fn main() {
         theme.apply_config(&{if dark_light::detect().unwrap() == dark_light::Mode::Dark { theme.dark_theme.clone() } else { theme.light_theme.clone() }});
         cx.spawn(async move |cx| {
             cx.open_window(WindowOptions {
-                titlebar: None,
+                titlebar: Some(TitleBar::title_bar_options()),
                 ..Default::default()
             }, |window, cx| {
                 let view = cx.new(|_| App {
