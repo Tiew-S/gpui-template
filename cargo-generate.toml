@@ -1,2 +1,2 @@
 [template]
-exclude = [".github/workflows/*.yml]
+exclude = [".github/workflows/*.yml"]
