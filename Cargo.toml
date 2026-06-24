@@ -20,7 +20,6 @@ gpui-component = { git = "https://github.com/longbridge/gpui-component" }
 gpui-component-assets = { git = "https://github.com/longbridge/gpui-component" }
 anyhow = "1.0"
 dark-light = "2.0.0"
-tap = "1.0.1"
 
 # The profile that 'dist' will build with
 [profile.dist]
