@@ -1,3 +1,5 @@
+#![windows_subsystem = "windows"]
+
 use gpui::*;
 use gpui_component::{button::*, input::{Input, InputState}, *};
 
@@ -6,7 +8,7 @@ pub struct App {
 }
 
 impl Render for App {
-    fn render(&mut self, _: &mut Window, _: &mut Context<Self>) -> impl IntoElement {
+    fn render(&mut self, _window: &mut Window, _cx: &mut Context<Self>) -> impl IntoElement {
         div()
             .size_full()
             .v_flex()
