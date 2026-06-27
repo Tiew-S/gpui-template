@@ -14,6 +14,11 @@ gpui-component-assets = { git = "https://github.com/longbridge/gpui-component" }
 anyhow = "1.0"
 dark-light = "2.0.0"
 
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1
+
 # For cargo-bundler
 [package.metadata.bundle]
 name = "{{project-name}}"
