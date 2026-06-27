@@ -13,3 +13,12 @@ gpui-component = { git = "https://github.com/longbridge/gpui-component" }
 gpui-component-assets = { git = "https://github.com/longbridge/gpui-component" }
 anyhow = "1.0"
 dark-light = "2.0.0"
+
+# For cargo-bundler
+[package.metadata.bundle]
+name = "{{project-name}}"
+identifier = "com.{{project-name}}.app"
+# Paths to your icons (provide icons for different platforms)
+# Example path: "assets/icon32x32.png"
+icon = []
+resources = []
